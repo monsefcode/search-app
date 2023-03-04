@@ -1,5 +1,3 @@
-import { User } from "@prisma/client";
-
 export const images = [
   "https://pbs.twimg.com/profile_images/1455257864126099463/qeQcRANk_400x400.jpg",
   "https://pbs.twimg.com/profile_images/1590968738358079488/IY9Gx6Ok_400x400.jpg",
@@ -8,7 +6,7 @@ export const images = [
   "https://pbs.twimg.com/profile_images/1243465670454632449/Gm06laC1_400x400.jpg",
 ];
 
-export const fakeUsers: Array<Pick<User, "name" | "imageUrl">> = [
+export const fakeUsers = [
   {
     name: "Emma Martinez",
     imageUrl: images[Math.floor(Math.random() * images.length)],
